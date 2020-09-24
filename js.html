@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js.js" type="text/javascript"> </script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <!-- <img id="on" src="bulboff.jpg" alt="" width="50%">
+    <button type="button" onclick=" bhanu()">click on</button>
+    <button type="button" onclick="prakash()">click off</button>
+    <h1 id="h1">iam learning javascript</h1>
+    <button type="button"
+        onclick="document.getElementById('h1').innerHTML='YES..,IAM LEARNING JAVASCRIPT I WILL COMPLETE IT.'">KNOW
+        MORE</button>
+    <h1 id="va">variable values are:</h1>    
+    <button   type="button" onclick="gurrala()">var values</button> -->
+    <script type="text/javascript">
+        //switch case:
+        /* var day = 1;
+            switch (day) {
+                case 1:
+                    document.write("<h1>TODAY IS SUNDAY</h1> ")
+                    break;
+                case 2:
+                    document.write("<h1>TODAY IS MONDAY</h1> ")
+                    break;
+                case 3:
+                    document.write("<h1>TODAY IS TUESDAY</h1> ")
+                    break;
+                case 4:
+                    document.write("<h1>TODAY IS WEDNESDAY</h1> ")
+                    break;
+                case 5:
+                    document.write("<h1>TODAY IS THURSDAY</h1> ")
+                    break;
+                case 6:
+                    document.write("<h1>TODAY IS FRIDAY</h1> ")
+                    break;
+                case 7:
+                    document.write("<h1>TODAY IS SATURDAY</h1> ")
+                    break;
+                default:
+                    document.write("<h1>WRONG INPUT</h1> ") 
+
+            }
+            
+        var day="bhanu";
+        switch(day+" prakash"){
+            case "bhanu prakash":
+                document.write("THATS MY NAME")
+        } */
+        //for loop.....
+        /* for(var x=1;x<=50;x++)
+         {
+             document.write(" <h1> 5*"+x+"  =  "+(5*x)+" </h1> ")
+         }*/
+
+        /* for(var x=2;x<=10;x+=2)
+         {
+             document.write("<h2>"+(x)+"</h2> ")
+         }*/
+        // while loop
+        /* var x=1;
+         
+         while(x<10)
+         {
+             document.write("<h1> "+x+" </h1>")
+             x=x+2;
+         }*/
+        //do while loop
+        /*var x=1;
+        do{
+            document.write("<h1  >BHANU</h1> ")
+            x=x+1;
+
+        }while(x<10000)*/
+        //functions...........................
+        /*function add(){
+            var a=10;
+            var b=90;
+            var result=a+b;
+            document.write("Result is:"+result)
+        }
+        add();*/
+
+        /* function add(a,b){
+             var result =a+b;
+             document.write("Result is:"+result)
+         }
+         add(10,20)*/
+
+        /*function add(a,b)
+        {
+            
+            var result = a+b;
+            return result;
+            
+            
+        }
+        var output=add(10,20);
+        document.write(" Result is:"+output);*/
+
+        //global and local variables
+        /* var a=9;  //global variable
+         document.write(a)
+         function global(){
+             document.write(a)
+         }
+         global(); //we can call the global variable in side function and outside function also
+ 
+         function local(){
+             var b=2; //local variable
+             document.write(b)
+         }
+         local(); //we can call the local variable inside function only.*/
+
+
+        //Arrays.....................
+        /* var cars=["BMW",'BENTLEY','ROLLSROYCE','LAMBORGHINI','AUDI','MASERATI','MERCEDES BENZ']
+         cars.push("RANGE ROVER",9999,2222,9);
+         for(var i=0;i<cars.length;i++)
+         {
+             document.write( "<h1>"+cars[i]+"</h1> ")
+         }*/
+
+
+        //Objects part-1......................
+
+
+
+
+        //DOM document object model manipulations...................
+
+        /* function bhanu()
+         {
+             document.getElementById("heading1").innerHTML=" <h1>hiii bhanu welcome to javascript tutorials</h1> "
+  
+             //alert("hii bhanu welcome to javascript")
+         }
+         function prakash()
+         {
+             document.getElementById("heading1").innerHTML="  THIS IS JAVASCRIPT TUTORIALS"
+         }*/
+
+        //Taking input from user....................
+        /* function bhanu()
+         {
+             var a= Number(document.getElementById("text1").value);
+             var b= Number(document.getElementById("text2").value);
+             var add = a+b;
+             //alert("The sum of given two numbers is:"+add)
+             document.getElementById("h1").innerHTML="THE RESULT OF GIVEN TWO NUMBERS IS:"+add
+         }*/
+
+        //form details..............
+        /*function bhanu() {
+            var username = document.getElementById("name").value;
+            var pwd1 = Number(document.getElementById("pwd").value);
+            var pwd2 = Number(document.getElementById("pwd2").value);
+            if (pwd1 != pwd2) {
+                alert("passwords are not matched..!")
+            }
+            else {
+                alert(username + "Submitted successfully")
+            }
+        }*/
+
+        //Taking input from radio buttons.............
+        /*function bhanu()
+        {
+            var rd1=document.getElementById("rd1");
+            var rd2=document.getElementById("rd2");
+            var rd3=document.getElementById("rd3");
+            var rd4=document.getElementById("rd4");
+            var rd5=document.getElementById("rd5");
+            if (rd1.checked == true)
+            {
+                alert("The selected channel is:"+rd1.value)
+            }
+            else if(rd2.checked==true)
+            {
+                alert("The selected channel is:"+rd2.value)
+            }
+            else if(rd3.checked==true)
+            {
+                alert("The selected channel is:"+rd3.value)
+            }
+            else if(rd4.checked==true)
+            {
+                alert("The selected channel is:"+rd4.value)
+            }
+            else{
+                alert("The selected channel is:"+rd5.value)
+            }
+        }*/
+
+        //Take input from select box
+        /* function bhanu()
+         {
+             var sel1=document.getElementById("sel");
+             alert(sel1.options[sel1.selectedIndex].value)
+ 
+         }*/
+
+        //Get elements by tagname
+        /*function bhanu()
+        {
+            var para=document.getElementsByTagName("p");
+            /*para[0].style.fontSize=90;
+            para[1].style.color="blue";
+            para[2].style.backgroundColor="green";
+            para[3].style.fontWeight="bold";
+            for(var i=0;i<para.length;i++)
+            {
+                para[i].style.color="red";
+            }
+        }*/
+
+        //Get elements by class name
+        /*function bhanu()
+        {
+            var para=document.getElementsByClassName("mypara")
+            for(var x=0;x<para.length;x++)
+            {
+                para[x].style.color="orange";
+            }
+        }*/
+
+        //change images by mouseover
+
+        /* function bhanu()
+         {
+            // document.getElementsByTagName("img").src="images/prakash.png"; by tag is not working in images feature....
+             document.getElementById("img1").src="images/prakash.png";
+             
+         }
+         function prakash()
+         {
+             document.getElementById("img1").src="images/bhanu.png";
+         }
+         function g()
+         {
+             document.getElementById("img2").src="images/bhanu.png";
+         }
+         function b()
+         {
+             document.getElementById("img2").src="images/prakash.png";
+         }*/
+
+        //Form validations
+        /*function validate() {
+            var username = document.getElementById("username");
+            var password = document.getElementById("pwd");
+            var cnfrm_paswrd = document.getElementById("pwd2");
+            if (username.value.trim() == "") {
+                //alert("NO BLANK VALUES ARE ALLOWED..!")
+                username.style.border = "solid 2px red";
+                document.getElementById("lbuser").style.visibility = "visible";
+                return false;
+            }
+            else if (password.value.trim() == "") {
+                // alert("NO BLANK VALUES ARE ALLOWED..!")
+                password.style.border = "solid 3px red";
+                document.getElementById("pwdd").style.visibility="visible";
+                return false;
+
+            }
+            else if (password.value.trim().length < 6) {
+                alert("password must have six characters...!")
+                return false;
+            }
+            else if (password.value != cnfrm_paswrd.value) {
+                //alert("passwords doesn't match..!")
+                cnfrm_paswrd.style.border="solid 2px red";
+                document.getElementById("pwdd2").style.visibility="visible";
+                return false;
+            }
+            else {
+                return true;
+            }
+        }*/
+
+        //Regular Expressions...............
+       /* function bhanu()
+        {
+            var uname=document.getElementById("username").value;
+           // var regx=/[a-z A-Z]a[0-9]b/;
+           // var regx=/^bhanuprakash$/;
+           //var regx=/[^bhanu]/excludes bhanu because of square brackest having carrot symbol...
+           
+           //^ means starting with and $ means ending with
+           // var regx=/mark/
+
+           //\d - match any digit (equal to [0-9])
+           //\w - match any word character (a-z,A-Z,0-9!@#$%)
+           //\s - match whitespace character (eg spaces & tabs)
+           //\t - match a tab only
+           var regx=/^[6-9]\d{9}$/;
+           if(regx.test(uname))
+            {
+               document.getElementById("lbuser").innerHTML="Valid";
+               document.getElementById("lbuser").style.visibility="visible";
+               document.getElementById("lbuser").style.color="green";
+               uname.style.border="solid 2px green";
+                
+            }
+            else{
+               
+                alert("Invalid username..!");
+                document.getElementById("lbuser").style.visibility="visible";
+              //  uname.style.border="solid 2px red";
+                
+            }
+           
+        }*/
+
+        //Debugging in javascript
+
+       /* function bhanu()
+        {
+            var a=document.getElementById("t1").value;
+            var b=document.getElementById("t2").value;
+            document.getElementById("h1").innerHTML="Result="+(a+b)
+            console.log(a+b)
+        }*/
+
+        //Timing functions in javascript....
+        /*var id=0;
+        var seconds=0;
+        function printmsg()
+        {
+            document.getElementById("some").innerHTML=seconds+"seconds";
+            seconds++;
+        }
+        function start()
+        {
+            //window.setTimeout(function,time(ms))
+           id= window.setInterval(printmsg,1000);
+        }
+        function stop()
+        {
+            window.clearTimeout(id);
+        }*/
+
+        //Fade in and fade out in javascript
+
+       /* var opacity=0;
+        var intervalID=0;
+        function fadeout()
+        {
+            intervalID=setInterval(hide,200);
+        }
+        function fadein()
+        {
+            intervalID=setInterval(show,200);
+        }
+        function show()
+        {
+            var img=document.getElementById("img1");
+            opacity=Number(window.getComputedStyle(img).getPropertyValue("opacity"));
+            if (opacity<1)
+            {
+                opacity=opacity+0.1;
+                img.style.opacity=opacity;
+                console.log(opacity)
+            }
+            else{
+                clearInterval(intervalID);
+            }
+
+        }
+        function hide()
+        {
+            var img=document.getElementById("img1");
+            opacity=Number(window.getComputedStyle(img).getPropertyValue("opacity"));
+            if (opacity>0)
+            {
+                opacity=opacity-0.1;
+                img.style.opacity=opacity;
+                console.log(opacity)
+            }
+            else{
+                clearInterval(intervalID);
+            }
+        }*/
+        // Zoom in and zoom out in javascript
+
+        var width=100;
+        var difference=100;
+        var intervalID=0;
+
+        function increase()
+        {
+            intervalID=setInterval(zoomin,20);
+        }
+        function zoomin()
+        {
+            if(width<30000)
+            {
+                width=width+difference;
+                document.getElementById("img1").style.width=width;
+                console.log(width);
+            }
+            else{
+                clearInterval(intervalID);
+            }
+        }
+    </script>
+
+    <!-- <h1 id="heading1">THIS IS JAVASCRIPT TUTORIALS</h1>
+        <button onmouseover="bhanu()" onmouseout="prakash()">clickme</button> -->
+    <!-- <label for="text1">Enter first value: </label>
+            <input type="text" id="text1">
+            <br>
+        <label for="text2">Enter second value: </label>
+        <input type="text" id="text2">
+        <br>
+        <div>
+        <button type="button" id="btn" onclick="bhanu()">Add</button>
+        
+        </div>
+        <h1 id="h1"> </h1> -->
+
+    <!-- <input type="text" id="name" placeholder="username">
+    <br>
+    <input type="password" id="pwd" placeholder="password">
+    <br>
+    <input type="password" id="pwd2" placeholder="confirm password">
+    <br>
+    <br>
+
+    <button type="submit" onclick="bhanu()" id="btn">submit</button> -->
+
+    <!-- Taking input from radio buttons............. -->
+    <!-- <input name="grp" type="radio" id="rd1" value="python">
+    <label for="rd1">python</label><br>
+      
+    <br>
+    <input type="radio" name="grp" id="rd2" value="Django">
+    <label for="rd2">Django</label>
+    <br>
+    <input type="radio" name="grp" id="rd3">Html
+    <br>
+    <input type="radio" name="grp" id="rd4">Css
+    <br>
+    <input type="radio" name="grp" id="rd5">Javascript
+    <br>
+    <button type="button" onclick="bhanu()">submit</button> -->
+
+    <!-- Take input from select box -->
+
+    <!-- <select name="" id="sel">
+        <option value="Python">Python</option>
+        <option value="Django">Django</option>
+        <option value="Javascript">Javascript</option>
+        <option value="Html">Html</option>
+        <option value="Css">Css</option>
+    </select>
+    <button type="submit" onclick="bhanu()">Submit</button> -->
+
+    <!-- Get elements by tagname -->
+
+    <!-- <p>This is paragapph 1</p>
+    <p>This is paragapph 2</p>
+    <p>This is paragapph 3</p>
+    <p>This is paragapph 4</p>
+    <p>This is paragapph 5</p>
+    
+    <button onmouseover="bhanu()" type="button">click me</button> -->
+
+    <!-- Get elements by class name -->
+    <!-- <p class="mypara">This is paragapph 1</p>
+    <p>This is paragapph 2</p>
+    <p class="mypara">This is paragapph 3</p>
+    <p>This is paragapph 4</p>
+    <p class="mypara">This is paragapph 5</p>
+    
+    <button onclick="bhanu()" type="button">click me</button> -->
+
+    <!-- change images by mouseover and mouseout -->
+
+    <!-- <img  id="img1" src="images/bhanu.png" onmouseover="bhanu()" onmouseout="prakash()">
+
+    <img  id="img2" src="images/prakash.png" onmouseover="g()" onmouseout="b()" alt=""> -->
+
+    <!-- Form validations -->
+    <!-- <form onsubmit="return validate()" action="message.html">
+        <input type="text" id="username" placeholder="username ">
+        <label for="username" id="lbuser" style="font-size: small;color:red; visibility: hidden;">username
+            invalid</label><br><br>
+        <input type="password" id="pwd" placeholder="password">
+        <label for="pwd" id="pwdd" style="font-size: small;color: red;visibility: hidden;">invalid password</label> <br><br>
+        <input type="password" id="pwd2" placeholder="confirm password">
+        <label for="pwd2" id="pwdd2" style="font-size: small;color: red;visibility: hidden;" >password must match!</label> <br><br>
+        <button type="submit">submit</button>
+    </form> -->
+    
+    <!-- Regular expressions....... -->
+    <!-- <form action="#">
+        <input type="text" id="username" placeholder="username">
+        <label for="username" id="lbuser" style="color:red; visibility: hidden;">Invalid username</label><br><br>
+        <button type="submit" onclick="bhanu()">submit</button>
+
+    </form> -->
+
+    <!-- Debugging in javascript................. -->
+<!-- 
+    <input type="text" id="t1" placeholder="1st number"><br><br>
+    <input type="text" id="t2" placeholder="2nd number"><br><br>
+    <button type="button" id="btn" onclick="bhanu()">Add</button>
+    <h1 id="h1" ></h1> -->
+
+    <!-- Timing functions in javascript.... -->
+    <!-- <button type="button" id="sta" onclick="start()">start</button>
+    <h1 id="some">some text</h1>
+    <button type="button" id="sto" onclick="stop()">stop</button> -->
+
+    <!-- Fade in adn fade out in javascript -->
+
+    <!-- <img src="images/bhanu.png" id="img1" alt="">
+    <button type="button" onclick="fadeout()" id="fo">Fadeout</button>
+    <button type="button" onclick="fadein()" id="fi">Fadein</button>
+    <img src="images/sahith.jpeg"  id="img2" alt=""> -->
+
+    <!-- zoom in adn zoomout in javascript -->
+
+    <img src="images/heart.png"  width="100" id="img1" onmouseover="increase()" onmouseout="decrease()" alt="">
+    <i class="fa fa-check" aria-hidden="true">bhanu</i>
+    <i class="fa fa-check-circle" aria-hidden="true"></i>
+    <i class="fa fa-check-circle" aria-hidden="true"></i>
+
+
+
+
+
+</body>
+
+</html>
